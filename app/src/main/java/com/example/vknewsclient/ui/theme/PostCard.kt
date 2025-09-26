@@ -66,7 +66,9 @@ fun PostCard() {
                 color = MaterialTheme.colorScheme.onBackground
             )
             Image(
-                modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 8.dp),
                 painter = painterResource(id = R.drawable.post_content_image),
                 contentScale = ContentScale.FillWidth,
                 contentDescription = null
@@ -76,7 +78,11 @@ fun PostCard() {
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Row {
-                    Text("206", color = MaterialTheme.colorScheme.outline, modifier = Modifier.padding(horizontal = 4.dp))
+                    Text(
+                        "206",
+                        color = MaterialTheme.colorScheme.outline,
+                        modifier = Modifier.padding(horizontal = 4.dp)
+                    )
                     Image(
                         modifier = Modifier
                             .size(20.dp)
@@ -86,21 +92,33 @@ fun PostCard() {
                     )
                 }
                 Row {
-                    Text("206", color = MaterialTheme.colorScheme.outline, modifier = Modifier.padding(horizontal = 4.dp))
+                    Text(
+                        "206",
+                        color = MaterialTheme.colorScheme.outline,
+                        modifier = Modifier.padding(horizontal = 4.dp)
+                    )
                     Image(
                         modifier = Modifier
                             .size(20.dp),
                         painter = painterResource(id = R.drawable.ic_share),
                         contentDescription = null
                     )
-                    Text("206", color = MaterialTheme.colorScheme.outline, modifier = Modifier.padding(horizontal = 4.dp))
+                    Text(
+                        "206",
+                        color = MaterialTheme.colorScheme.outline,
+                        modifier = Modifier.padding(horizontal = 4.dp)
+                    )
                     Image(
                         modifier = Modifier
                             .size(20.dp),
                         painter = painterResource(id = R.drawable.ic_comment),
                         contentDescription = null
                     )
-                    Text("206", color = MaterialTheme.colorScheme.outline, modifier = Modifier.padding(horizontal = 4.dp))
+                    Text(
+                        "206",
+                        color = MaterialTheme.colorScheme.outline,
+                        modifier = Modifier.padding(horizontal = 4.dp)
+                    )
                     Image(
                         modifier = Modifier
                             .size(20.dp),
